@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+.active {
+    background-color: #ffffff ;
+    color:#ff00ff ; 
+
+  }

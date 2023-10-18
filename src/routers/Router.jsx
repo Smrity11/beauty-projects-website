@@ -8,6 +8,9 @@ import AboutUs from "../pages/AboutUs";
 import Error from "../error/Error";
 // import PrivateRoute from "./privateRoute";
 import CommingSoon from "../error/CommingSoon";
+import MyCart from "../pages/MyCart";
+import AddProduct from "../pages/AddProduct";
+import Shop from "../pages/Shop";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +40,18 @@ const router = createBrowserRouter([
       {
         path: "/commingsoon",
         element:<CommingSoon></CommingSoon>,
+      },
+      {
+        path: "/mycart",
+        element:<MyCart></MyCart>,
+      },
+      {
+        path: "/addproduct",
+        element:<AddProduct></AddProduct>,
+      },
+      {
+        path: "/shop",
+        element:<Shop></Shop>,
       },
     
     //   {
