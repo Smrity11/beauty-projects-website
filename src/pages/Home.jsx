@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import ExtraSection from "../components/ExtraSection";
 import Brand from "../layout/Brand";
 
 import Shipping from "../layout/Shipping";
@@ -11,6 +12,7 @@ const Home = () => {
             <Banner></Banner>
             <Shipping></Shipping>
             <Brand></Brand>
+            <ExtraSection></ExtraSection>
             <SpecialProduct></SpecialProduct>
             
         </div>
