@@ -53,7 +53,7 @@ const MyCart = () => {
               <div className="btn-group btn-group-vertical space-y-4">
                 <button className="btn btn-active">View</button>
                 <Link to={`/updatecosmetics/${cosmetic._id}`}>
-                  <button className="btn btn-active">Edit</button>
+                  <button className="btn btn-active">Update</button>
                 </Link>
                 <button
                   onClick={() => handleDelete(cosmetic._id)}

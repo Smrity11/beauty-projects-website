@@ -156,7 +156,7 @@ const UpdateCosmetics = () => {
                 />
               </label>
             </div>
-            <input type="submit" value='Update Product' className="btn btn-block"></input>
+            <input type="submit" value='Update product' className="btn btn-block"></input>
         </form>
       </div>
     );
