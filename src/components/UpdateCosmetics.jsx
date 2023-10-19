@@ -20,7 +20,7 @@ const UpdateCosmetics = () => {
         console.log(UpdateCosmetics);
 
         // send data to the server
-        fetch(`http://localhost:5000/cosmetics/${_id}` ,{
+        fetch(`https://beauty-server-project-assignment.vercel.app/cosmetics/${_id}` ,{
             method:"PUT",
             headers:{
                 "content-type" : "application/json"

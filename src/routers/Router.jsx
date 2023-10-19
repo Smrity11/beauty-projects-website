@@ -46,7 +46,7 @@ const router = createBrowserRouter([
         path: "/mycart",
         element:<MyCart></MyCart>,
         loader: async () => {
-          const response = await fetch('http://localhost:5000/cosmetics');
+          const response = await fetch('https://beauty-server-project-assignment.vercel.app/cosmetics');
           const data = await response.json();
           return data;
         }
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
        {
     path: "/updatecosmetics/:id",
     element:<UpdateCosmetics></UpdateCosmetics> ,
-    loader: ({params}) => fetch(`http://localhost:5000/cosmetics/${params.id}`)
+    loader: ({params}) => fetch(`https://beauty-server-project-assignment.vercel.app/cosmetics/${params.id}`)
   },
       {
         path: "/addproduct",

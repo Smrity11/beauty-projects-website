@@ -16,7 +16,7 @@ const AddProduct = () => {
         console.log(newCosmetics);
 
         // send data to the server
-        fetch('http://localhost:5000/cosmetics' ,{
+        fetch('https://beauty-server-project-assignment.vercel.app/cosmetics' ,{
             method:"POST",
             headers:{
                 "content-type" : "application/json"
