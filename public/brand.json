@@ -2,7 +2,7 @@
     {
       "id": 1,
       "brand": "L'Oréal",
-      "image": "loreal_product.jpg",
+      "image": "https://www.mbaknol.com/wp-content/uploads/2011/08/loreal-india-mbaknol.jpg.webp",
       "name": "L'Oréal Product",
       "type": "Cosmetics",
       "price": "$29.99",
@@ -11,25 +11,25 @@
     {
       "id": 2,
       "brand": "Estée Lauder",
-      "image": "estee_lauder_product.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGU9Cs9KM1Rn07PioekvsDjCmsZ9VWLy9T_g&usqp=CAU",
       "name": "Estée Lauder Product",
-      "type": "Makeup",
+      "type": "Perfume",
       "price": "$49.99",
       "rating": 4.7
     },
     {
       "id": 3,
       "brand": "Chanel",
-      "image": "chanel_product.jpg",
+      "image": "https://media.karousell.com/media/photos/products/2018/07/21/chanel_hijab_pins_1532167764_3908683c_progressive.jpg",
       "name": "Chanel Product",
-      "type": "Perfume",
+      "type": "Hijab pin",
       "price": "$99.99",
       "rating": 4.8
     },
     {
       "id": 4,
       "brand": "Dior",
-      "image": "dior_product.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7o3kVCJ_o8Bxl2qhhLYWyqpsS01X0ZoqObw&usqp=CAU",
       "name": "Dior Product",
       "type": "Skincare",
       "price": "$69.99",
@@ -37,37 +37,37 @@
     },
     {
       "id": 5,
-      "brand": "Urban Decay",
-      "image": "urban_decay_product.jpg",
-      "name": "Urban Decay Product",
-      "type": "Cosmetics",
+      "brand": "beauty glazed",
+      "image": "https://beautyglazed.com/cdn/shop/files/slideshow-B72-2_1000x_fd055326-1077-4e4c-9666-204a1018bf7f_2048x2048.webp?v=1654846513",
+      "name": "beauty glazed Product",
+      "type": "Shadow palate",
       "price": "$39.99",
       "rating": 4.6
     },
     {
       "id": 6,
-      "brand": "Procter & Gamble",
-      "image": "pandg_product.jpg",
-      "name": "P&G Product",
-      "type": "Household",
+      "brand": "Louis Vuitton",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHrIo9qP0f1w7r7KOpY7qhlOuDQDl__xr8mReoScu1sriPgFtHT9fJgcDAlTMO5OpNRHg&usqp=CAU",
+      "name": "Louis Vuitton Product",
+      "type": "Bag",
       "price": "$19.99",
       "rating": 4.3
     },
     {
       "id": 7,
-      "brand": "Revlon",
-      "image": "revlon_product.jpg",
-      "name": "Revlon Product",
-      "type": "Cosmetics",
+      "brand": "Alcon",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ30BydeCwL-8N-kt3_wUA6ziCRrvi5HDcaqijbxrtbaw2qh_XszquAoBcunPdSUQZR4c&usqp=CAU",
+      "name": "Alcon Product",
+      "type": "Contact lens",
       "price": "$24.99",
       "rating": 4.4
     },
     {
       "id": 8,
       "brand": "Avon",
-      "image": "avon_product.jpg",
+      "image": "https://www.avonworldwide.com/.imaging/mte/avon-company-theme/800x450/dam/avc/images/beauty-and-innovation/avon-care-lavender.jpg/jcr:content/avon-care-lavender.jpg",
       "name": "Avon Product",
-      "type": "Cosmetics",
+      "type": "Hair Care",
       "price": "$19.99",
       "rating": 4.2
     }

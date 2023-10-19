@@ -9,7 +9,7 @@ const Banner = () => {
                 <div className="pt-10 md:pt-0 space-y-4 px-3 md:px-14">
                 <h1 className="text-2xl uppercase font-bold">take time for yourself today</h1>
                 <div className=" w-16 h-4 border-b-2 border-[#ffbf47]"></div>
-                <p className="mt-[100px]">Inspired by apothecary know-how, we always strive to source ingredients that respect the environment. We focus on quality to respect the skin, and priority is always given to those that are made in France. </p>
+                <p className="mt-[100px] leading-loose text-slate-600">Inspired by apothecary know-how, we always strive to source ingredients that respect the environment. We focus on quality to respect the skin, and priority is always given to those that are made in France.In recent years, the cosmetics and beauty industry has made significant strides towards inclusivity.  </p>
                 </div>
                 <div className="">
                 

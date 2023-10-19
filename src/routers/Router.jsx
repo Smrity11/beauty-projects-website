@@ -11,6 +11,7 @@ import CommingSoon from "../error/CommingSoon";
 import MyCart from "../pages/MyCart";
 import AddProduct from "../pages/AddProduct";
 import Shop from "../pages/Shop";
+import UpdateCosmetics from "../components/UpdateCosmetics";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
-    
+      
      
       {
         path: "/aboutus",
@@ -44,7 +45,17 @@ const router = createBrowserRouter([
       {
         path: "/mycart",
         element:<MyCart></MyCart>,
+        loader: async () => {
+          const response = await fetch('http://localhost:5000/cosmetics');
+          const data = await response.json();
+          return data;
+        }
       },
+       {
+    path: "/updatecosmetics/:id",
+    element:<UpdateCosmetics></UpdateCosmetics> ,
+    loader: ({params}) => fetch(`http://localhost:5000/cosmetics/${params.id}`)
+  },
       {
         path: "/addproduct",
         element:<AddProduct></AddProduct>,
