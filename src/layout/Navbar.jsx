@@ -29,36 +29,6 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li className="text-lg">
-        <NavLink
-          to="/services"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline active"
-              : ""
-          }
-        >
-          {" "}
-          Services
-        </NavLink>
-      </li>
-      <li className="text-lg">
-        <NavLink
-          to="/shop"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "underline active"
-              : ""
-          }
-        >
-          {" "}
-          Shop
-        </NavLink>
-      </li>
 
       <li className="text-lg">
         <NavLink

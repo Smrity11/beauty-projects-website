@@ -43,7 +43,7 @@ const ExtraSection = () => {
       <div>
         <h2 className="text-3xl font-bold text-center my-12">
           {" "}
-          Slider for Asia{" "}
+          Top Categories{" "}
         </h2>
         <Slider {...settings}>
           <div className="mx-4 shadow-lg h-[200px]">
@@ -57,49 +57,49 @@ const ExtraSection = () => {
           <div className="mx-4 shadow-lg h-[200px]">
             <img
               className="w-28 h-28 mx-auto mt-10 rounded-full"
-              src="https://cdn.vox-cdn.com/thumbor/d4cdzO7DHNcwZxIelICHbV0rC2I=/0x0:1123x634/1400x788/filters:focal(473x228:651x406):format(png)/cdn.vox-cdn.com/uploads/chorus_image/image/55560387/Screen_Shot_2017_07_03_at_3.46.31_PM.0.png"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlouCXdvnY3YqMYgWYLBuG-O3ktxOiZ7JcAg&usqp=CAU"
               alt=""
             />
           </div>
           <div className="mx-4 shadow-lg h-[200px]">
             <img
               className="w-28 h-28 mx-auto mt-10 rounded-full"
-              src="https://c4.wallpaperflare.com/wallpaper/294/301/212/5bd4632ea45fa-wallpaper-preview.jpg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-LOnn9fjraUTUd_vWakZHcKulEaV7BXrnNQ&usqp=CAU"
               alt=""
             />
           </div>
           <div className="mx-4 shadow-lg h-[200px]">
             <img
               className="w-28 h-28 mx-auto mt-10 rounded-full"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKyMYkyLk-tjkSNZcIPAOUc-EHJzOn2nf-hQ&usqp=CAU"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyTkr90O0aiP1hkbkeXjgSQhbMBXFPkofMww&usqp=CAU"
               alt=""
             />
           </div>
           <div className="mx-4 shadow-lg h-[200px]">
             <img
               className="w-28 h-28 mx-auto mt-10 rounded-full"
-              src="https://wallpapers.com/images/hd/alone-boy-pictures-ccpuemdixiqzwl2b.jpg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrvxWV529cAkftMVHYIA3GJDYujRFh-8qixQ&usqp=CAU"
               alt=""
             />
           </div>
           <div className="mx-4 shadow-lg h-[200px]">
             <img
               className="w-28 h-28 mx-auto mt-10 rounded-full"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4VMNe1RS2T6LpQqq3FIxAm8_nW7cuURUap1aDAeytC1MlYPabyg3i14xWtEO8b_N0PfI&usqp=CAU"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShm9S06ygattXjsLcjR5xzkHh9qMK2gs1nlQ&usqp=CAU"
               alt=""
             />
           </div>
           <div className="mx-4 shadow-lg h-[200px]">
             <img
               className="w-28 h-28 mx-auto mt-10 rounded-full"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVXXOf3dJHf9bpoP6Cn9j5VERnT9zKvnct_gSfkQPhDd944_P8Umuy28h9xtKkulUd58I&usqp=CAU"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlUnCEh_jpImoF94GAOjYxylR3QVhArv3aEQ&usqp=CAU"
               alt=""
             />
           </div>
           <div className="mx-4 shadow-lg h-[200px]">
             <img
               className="w-28 h-28 mx-auto mt-10 rounded-full"
-              src="https://cache.desktopnexus.com/thumbseg/1323/1323256-bigthumbnail.jpg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQscxGfuDOgOomtwSeGKZSSEJgPQ3L55zSt7w&usqp=CAU"
               alt=""
             />
           </div>

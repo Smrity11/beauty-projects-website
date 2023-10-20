@@ -7,11 +7,21 @@ import AboutUs from "../pages/AboutUs";
 // import Services from "../pages/services/Services";
 import Error from "../error/Error";
 // import PrivateRoute from "./privateRoute";
-import CommingSoon from "../error/CommingSoon";
+// import CommingSoon from "../error/CommingSoon";
 import MyCart from "../pages/MyCart";
 import AddProduct from "../pages/AddProduct";
-import Shop from "../pages/Shop";
+
 import UpdateCosmetics from "../components/UpdateCosmetics";
+// import BrandData from "../components/BrandData";
+import Brand from "../layout/Brand";
+import Avon from "../components/AllBrand/Avon";
+import Alcon from "../components/AllBrand/Alcon";
+import Dior from "../components/AllBrand/Dior";
+import Chanel from "../components/AllBrand/Chanel";
+import Loreal from "../components/AllBrand/Loreal";
+import BeautyGlazed from "../components/AllBrand/BeautyGlazed";
+import EsteLauder from "../components/AllBrand/EsteLauder";
+import LuiosVuttion from "../components/AllBrand/LuiosVuttion";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,7 +31,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader:() => fetch("services.json")
       },
       {
         path: "/login",
@@ -32,16 +41,70 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
-      
+      {
+        path: "/brand",
+        element: <Brand></Brand>,
+       
+      },
      
       {
         path: "/aboutus",
         element:<AboutUs></AboutUs>,
       },
+     
       {
-        path: "/commingsoon",
-        element:<CommingSoon></CommingSoon>,
+        path: "/estelauder",
+        element:<EsteLauder></EsteLauder>,
       },
+     
+      {
+        path: "/beautyglazed",
+        element:<BeautyGlazed></BeautyGlazed>,
+      },
+     
+      {
+        path: "/loreal",
+        element:<Loreal></Loreal>,
+      },
+     
+      {
+        path: "/chanel",
+        element:<Chanel></Chanel>,
+      },
+      {
+        path: "/luiosvuttion",
+        element:<LuiosVuttion></LuiosVuttion>,
+      },
+     
+      {
+        path: "/dior",
+        element:<Dior></Dior>,
+      },
+     
+      {
+        path: "/alcon",
+        element:<Alcon></Alcon>,
+      },
+     
+      {
+        path: "/avon",
+        element:<Avon></Avon>,
+      },
+     
+      {
+        path: "/aboutus",
+        element:<AboutUs></AboutUs>,
+      },
+      // {
+      //   path: "/brand/:id",
+      //   element:<BrandData></BrandData>,
+       
+      
+      // },
+      // {
+      //   path: "/commingsoon",
+      //   element:<CommingSoon></CommingSoon>,
+      // },
       {
         path: "/mycart",
         element:<MyCart></MyCart>,
@@ -59,10 +122,6 @@ const router = createBrowserRouter([
       {
         path: "/addproduct",
         element:<AddProduct></AddProduct>,
-      },
-      {
-        path: "/shop",
-        element:<Shop></Shop>,
       },
     
     //   {

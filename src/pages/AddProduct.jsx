@@ -1,44 +1,59 @@
+import { useState } from "react";
 import Swal from "sweetalert2";
 
-
 const AddProduct = () => {
-    const handleForm = e =>{
-        e.preventDefault()
-        const form = e.target
-        const name = form.name.value
-        const brandname = form.brandname.value
-        const type = form.type.value
-        const price = form.price.value
-        const description = form.description.value
-        const rating = form.rating.value
-        const photo = form.photo.value
-        const newCosmetics={name,brandname,type,price,description,rating,photo}
-        console.log(newCosmetics);
+  const [selectedCategory, setSelectedCategory] = useState('');
 
-        // send data to the server
-        fetch('https://beauty-server-project-assignment.vercel.app/cosmetics' ,{
-            method:"POST",
-            headers:{
-                "content-type" : "application/json"
-            },
-            body:JSON.stringify(newCosmetics)
-        })
-        .then(res => res.json())
-        .then(data =>{
-            console.log(data);
-            if(data.insertedId){
-                Swal.fire({
-                    tittle:'success',
-                    text: 'product added successfully',
-                    icon:'success',
-                    confirmButtonText:'Cool'
-                })
-            }
-        })
-    }
-    return (
+  const handleForm = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const brandname = form.brandname.value;
+    const type = form.type.value;
+    const price = form.price.value;
+    const description = form.description.value;
+    const rating = form.rating.value;
+    const photo = form.photo.value;
+    const category = form.category.value
+    const newCosmetics = {
+      name,
+      brandname,
+      type,
+      price,
+      description,
+      rating,
+      photo,
+      category
+    };
+    console.log(newCosmetics);
 
-<div className="bg-[#F4F3F0] md:p-24">
+    // send data to the server
+    fetch("http://localhost:5000/allProducts", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newCosmetics),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          Swal.fire({
+            tittle: "success",
+            text: "product added successfully",
+            icon: "success",
+            confirmButtonText: "Cool",
+          });
+        }
+      });
+  };
+  const categories = ["L'Oréal", "Estée Lauder", "Chanel", "Dior", "Alcon", "Avon", "beauty glazed" ,"Louis Vuitton"];
+  const handleCategoryChange = (e) => {
+    setSelectedCategory(e.target.value);
+  };
+  return (
+    <div className="bg-[#F4F3F0] md:p-24">
       <h2 className="text-3xl">Add a Product</h2>
       <form onSubmit={handleForm}>
         <div className="flex gap-7 mb-6">
@@ -47,9 +62,8 @@ const AddProduct = () => {
               <span className="label-text">Name</span>
             </label>
             <label className="input-group">
-              
               <input
-              name="name"
+                name="name"
                 type="text"
                 placeholder="enter Cosmetic name"
                 className="input input-bordered w-full"
@@ -57,18 +71,27 @@ const AddProduct = () => {
             </label>
           </div>
           <div className="form-control md:w-1/2">
-            <label className="label">
-              <span className="label-text">Brand Name</span>
-            </label>
-            <label className="input-group">
-             
-              <input
-                name="brandname"
-                type="text"
-                placeholder="brand name"
-                className="input input-bordered w-full"
-              />
-            </label>
+          <div className="container mx-auto mt-3">
+      <label className="block text-gray-700 text-sm font-bold " htmlFor="category">
+        Select a Category:
+      </label>
+      <select
+        id="category"
+        name="category"
+        className="border rounded px-4 py-2 w-full"
+        onChange={handleCategoryChange}
+        value={selectedCategory}
+        required
+      >
+        <option value="" disabled>Select a brand</option>
+        {categories.map((category, index) => (
+          <option key={index} value={category}>
+            {category}
+          </option>
+        ))}
+      </select>
+      {selectedCategory && <p className="mt-2 text-green-500">You selected: {selectedCategory}</p>}
+    </div>
           </div>
         </div>
         <div className="flex gap-7 mb-6">
@@ -77,9 +100,8 @@ const AddProduct = () => {
               <span className="label-text">Type</span>
             </label>
             <label className="input-group">
-              
               <input
-              name="type"
+                name="type"
                 type="text"
                 placeholder="enter type"
                 className="input input-bordered w-full"
@@ -91,7 +113,6 @@ const AddProduct = () => {
               <span className="label-text">Photo URL</span>
             </label>
             <label className="input-group">
-             
               <input
                 name="photo"
                 type="text"
@@ -101,28 +122,27 @@ const AddProduct = () => {
             </label>
           </div>
         </div>
-      
+
         <div className="flex gap-7 mb-6">
           <div className="form-control md:w-1/2">
             <label className="label">
               <span className="label-text">Price</span>
             </label>
             <label className="input-group">
-              
               <input
-              name="price"
+                name="price"
                 type="text"
                 placeholder="enter price"
                 className="input input-bordered w-full"
               />
             </label>
           </div>
+          
           <div className="form-control md:w-1/2">
             <label className="label">
               <span className="label-text">Ratings</span>
             </label>
             <label className="input-group">
-             
               <input
                 name="rating"
                 type="text"
@@ -133,24 +153,26 @@ const AddProduct = () => {
           </div>
         </div>
         <div className="form-control w-full mb-6">
-            <label className="label">
-              <span className="label-text">Description</span>
-            </label>
-            <label className="input-group">
-             
-              <input
-                name="description"
-                type="text"
-                placeholder="description"
-                className="input input-bordered w-full"
-              />
-            </label>
-          </div>
-          <input type="submit" value='Add Product' className="btn btn-block"></input>
+          <label className="label">
+            <span className="label-text">Description</span>
+          </label>
+          <label className="input-group">
+            <input
+              name="description"
+              type="text"
+              placeholder="description"
+              className="input input-bordered w-full"
+            />
+          </label>
+        </div>
+        <input
+          type="submit"
+          value="Add Product"
+          className="btn btn-block"
+        ></input>
       </form>
     </div>
-
-    );
+  );
 };
 
 export default AddProduct;
