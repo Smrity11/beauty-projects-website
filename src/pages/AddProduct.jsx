@@ -8,22 +8,22 @@ const AddProduct = () => {
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
-    const brandname = form.brandname.value;
+   
     const type = form.type.value;
     const price = form.price.value;
     const description = form.description.value;
     const rating = form.rating.value;
     const photo = form.photo.value;
-    const category = form.category.value
+    const brand = form.category.value
     const newCosmetics = {
       name,
-      brandname,
+      brand,
       type,
       price,
       description,
       rating,
       photo,
-      category
+      
     };
     console.log(newCosmetics);
 
@@ -73,7 +73,7 @@ const AddProduct = () => {
           <div className="form-control md:w-1/2">
           <div className="container mx-auto mt-3">
       <label className="block text-gray-700 text-sm font-bold " htmlFor="category">
-        Select a Category:
+        Select a Brand:
       </label>
       <select
         id="category"

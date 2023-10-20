@@ -23,6 +23,8 @@ import BeautyGlazed from "../components/AllBrand/BeautyGlazed";
 import EsteLauder from "../components/AllBrand/EsteLauder";
 import LuiosVuttion from "../components/AllBrand/LuiosVuttion";
 import PrivateRoute from "./privateRoute";
+
+import BrandDetails from "../components/BrandDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -58,6 +60,7 @@ const router = createBrowserRouter([
         element:<EsteLauder></EsteLauder>,
           loader: () => fetch("http://localhost:5000/allproducts")
       },
+     
      
       {
         path: "/beautyglazed",
@@ -104,6 +107,11 @@ const router = createBrowserRouter([
         path: "/aboutus",
         element:<AboutUs></AboutUs>,
       },
+      {
+        path: "/productdetails/:id",
+        element:<BrandDetails></BrandDetails>,
+          loader: ({params}) =>fetch(`http://localhost:5000/allproducts/${params.id}`)
+      },
       // {
       //   path: "/brand/:id",
       //   element:<BrandData></BrandData>,
@@ -126,7 +134,7 @@ const router = createBrowserRouter([
        {
     path: "/updatecosmetics/:id",
     element:<PrivateRoute><UpdateCosmetics></UpdateCosmetics> </PrivateRoute>,
-    loader: ({params}) => fetch(`https://beauty-server-project-assignment.vercel.app/cosmetics/${params.id}`)
+    loader: ({params}) => fetch(`http://localhost:5000/allproducts/${params.id}`)
   },
       {
         path: "/addproduct",

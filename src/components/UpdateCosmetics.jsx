@@ -1,26 +1,29 @@
+
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
 const UpdateCosmetics = () => {
     const cosmetic =useLoaderData()
-    const{_id,name,brandname,type,price,description,rating,photo} = cosmetic
+    const{_id,name,brand,type,price,description,rating,photo} = cosmetic
+  
+   console.log(cosmetic)
 
     const handleForm = e =>{
         e.preventDefault()
         const form = e.target
         const name = form.name.value
-        const brandname = form.brandname.value
+        const brand = form.brandname.value
         const type = form.type.value
         const price = form.price.value
         const description = form.description.value
         const rating = form.rating.value
         const photo = form.photo.value
-        const UpdateCosmetics={name,brandname,type,price,description,rating,photo}
+        const UpdateCosmetics={name,brand,type,price,description,rating,photo}
         console.log(UpdateCosmetics);
 
         // send data to the server
-        fetch(`https://beauty-server-project-assignment.vercel.app/cosmetics/${_id}` ,{
+        fetch(`http://localhost:5000/allproducts/${_id}` ,{
             method:"PUT",
             headers:{
                 "content-type" : "application/json"
@@ -40,9 +43,10 @@ const UpdateCosmetics = () => {
             }
         })
     }
+  
     return (
         <div className="bg-[#F4F3F0] md:p-24">
-        <h2 className="text-3xl">Add a Product</h2>
+        <h2 className="text-3xl">Update a Product</h2>
         <form onSubmit={handleForm}>
           <div className="flex gap-7 mb-6">
             <div className="form-control md:w-1/2">
@@ -61,20 +65,19 @@ const UpdateCosmetics = () => {
               </label>
             </div>
             <div className="form-control md:w-1/2">
-              <label className="label">
-                <span className="label-text">Brand Name</span>
-              </label>
-              <label className="input-group">
-               
-                <input
-                defaultValue={brandname}
-                  name="brandname"
-                  type="text"
-                  placeholder="brand name"
-                  className="input input-bordered w-full"
-                />
-              </label>
-            </div>
+            <label className="label">
+              <span className="label-text">Brand</span>
+            </label>
+            <label className="input-group">
+              <input
+              defaultValue={brand}
+                name="brandname"
+                type="text"
+                placeholder="enter type"
+                className="input input-bordered w-full"
+              />
+            </label>
+          </div>
           </div>
           <div className="flex gap-7 mb-6">
             <div className="form-control md:w-1/2">
