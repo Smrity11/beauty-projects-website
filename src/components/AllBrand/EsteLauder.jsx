@@ -30,7 +30,7 @@ const EsteLauder = () => {
              </div>
              <div className="flex justify-between gap-12">
                <p>Ratings: {product.rating}</p>
-               <NavLink to={`/product/${product._id}`} className="underline">See Details</NavLink>
+               <NavLink to={`/productdetails/${product._id}`} className="underline">See Details</NavLink>
              </div>
              <div className="card-actions">
                <button className="btn btn-primary">Update</button>

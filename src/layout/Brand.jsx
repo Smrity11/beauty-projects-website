@@ -16,7 +16,7 @@ const Brand = () => {
   // ,[])
 
   useEffect(() => {
-    fetch("http://localhost:5000/brand")
+    fetch("https://beauty-server-project-assignment.vercel.app/brand")
       .then((res) => res.json())
       .then((data) => console.log(data));
   }, []);

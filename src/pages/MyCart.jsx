@@ -53,7 +53,7 @@ const MyCart = () => {
           className="card card-side bg-base-100 shadow-xl"
         >
           <figure>
-            <img src={cosmetic.photo} alt="Movie" />
+            <img src={cosmetic.image} alt="Movie" />
           </figure>
           <div className="flex justify-between w-full pr-4 items-center">
             <div className="space-y-3 ml-3">
@@ -63,7 +63,7 @@ const MyCart = () => {
             </div>
             <div className="card-actions justify-end">
               <div className="btn-group btn-group-vertical space-y-4">
-                <button className="btn btn-active">View</button>
+               <Link to={`/productdetails/${cosmetic._id}`}> <button className="btn btn-active">View</button></Link>
                 <Link to={`/updatecosmetics/${cosmetic._id}`}>
                   <button className="btn btn-active">Update</button>
                 </Link>

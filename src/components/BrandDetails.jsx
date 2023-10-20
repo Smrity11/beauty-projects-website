@@ -1,10 +1,36 @@
 import { useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 const BrandDetails = () => {
     const brandDataLoad = useLoaderData()
-    const {singleData, image, name, price, rating, description} = brandDataLoad
-    console.log(singleData)
+  
+    const { image, name, price, rating, description} = brandDataLoad
+    
+
+
+const handleAddtoCard= () =>{
+    fetch("https://beauty-server-project-assignment.vercel.app/cosmetics", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(brandDataLoad),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          if (data.insertedId) {
+            Swal.fire({
+              tittle: "success",
+              text: "product added successfully",
+              icon: "success",
+              confirmButtonText: "Cool",
+            });
+          }
+        });
+}
+
     return (
        <>
        <h2 className="text-3xl font-bold text-center my-12 text-gray-700">Product Details</h2>
@@ -26,7 +52,9 @@ const BrandDetails = () => {
           <span className="text-gray-700 text-base">Rating: {rating}</span>
         </div>
         <div className="me-8 btn btn-success normal-case">
-            <button>Add to Card</button>
+            <button
+            onClick={() => handleAddtoCard()}
+            >Add to Card</button>
         </div>
     </div>
         </div>

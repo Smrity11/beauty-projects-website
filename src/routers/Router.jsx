@@ -58,49 +58,49 @@ const router = createBrowserRouter([
       {
         path: "/estelauder",
         element:<EsteLauder></EsteLauder>,
-          loader: () => fetch("http://localhost:5000/allproducts")
+          loader: () => fetch("https://beauty-server-project-assignment.vercel.app/allproducts")
       },
      
      
       {
         path: "/beautyglazed",
         element:<BeautyGlazed></BeautyGlazed>,
-        loader: () => fetch("http://localhost:5000/allproducts")
+        loader: () => fetch("https://beauty-server-project-assignment.vercel.app/allproducts")
       },
      
       {
         path: "/loreal",
         element:<Loreal></Loreal>,
-        loader: () => fetch("http://localhost:5000/allproducts")
+        loader: () => fetch("https://beauty-server-project-assignment.vercel.app/allproducts")
       },
      
       {
         path: "/chanel",
         element:<Chanel></Chanel>,
-        loader: () => fetch("http://localhost:5000/allproducts")
+        loader: () => fetch("https://beauty-server-project-assignment.vercel.app/allproducts")
       },
       {
         path: "/luiosvuttion",
         element:<LuiosVuttion></LuiosVuttion>,
-        loader: () => fetch("http://localhost:5000/allproducts")
+        loader: () => fetch("https://beauty-server-project-assignment.vercel.app/allproducts")
       },
      
       {
         path: "/dior",
         element:<Dior></Dior>,
-        loader: () => fetch("http://localhost:5000/allproducts")
+        loader: () => fetch("https://beauty-server-project-assignment.vercel.app/allproducts")
       },
      
       {
         path: "/alcon",
         element:<Alcon></Alcon>,
-        loader: () => fetch("http://localhost:5000/allproducts")
+        loader: () => fetch("https://beauty-server-project-assignment.vercel.app/allproducts")
       },
      
       {
         path: "/avon",
         element:<Avon></Avon>,
-        loader: () => fetch("http://localhost:5000/allproducts")
+        loader: () => fetch("https://beauty-server-project-assignment.vercel.app/allproducts")
       },
      
       {
@@ -110,7 +110,7 @@ const router = createBrowserRouter([
       {
         path: "/productdetails/:id",
         element:<BrandDetails></BrandDetails>,
-          loader: ({params}) =>fetch(`http://localhost:5000/allproducts/${params.id}`)
+          loader: ({params}) =>fetch(`https://beauty-server-project-assignment.vercel.app/allproducts/${params.id}`)
       },
       // {
       //   path: "/brand/:id",
@@ -134,7 +134,7 @@ const router = createBrowserRouter([
        {
     path: "/updatecosmetics/:id",
     element:<PrivateRoute><UpdateCosmetics></UpdateCosmetics> </PrivateRoute>,
-    loader: ({params}) => fetch(`http://localhost:5000/allproducts/${params.id}`)
+    loader: ({params}) => fetch(`https://beauty-server-project-assignment.vercel.app/allproducts/${params.id}`)
   },
       {
         path: "/addproduct",
