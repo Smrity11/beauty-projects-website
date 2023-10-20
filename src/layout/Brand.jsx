@@ -110,7 +110,7 @@ const Brand = () => {
              <NavLink to="/beautyglazed">
              <div className="max-w-xs w-full bg-gray-100 p-4 m-4 rounded-lg shadow-md mx-auto">
                 <div className="text-center mt-4">
-                  <h1 className="text-xl font-semibold">beauty glazed</h1>
+                  <h1 className="text-xl font-semibold">Beauty glazed</h1>
                   {/* <p className="text-gray-600">{brandData?.type}</p> */}
                   <div className="border-b-2 border-[#ffbf47] my-4 mx-auto w-8"></div>
                 </div>

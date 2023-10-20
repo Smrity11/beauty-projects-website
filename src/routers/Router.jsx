@@ -56,11 +56,13 @@ const router = createBrowserRouter([
       {
         path: "/estelauder",
         element:<EsteLauder></EsteLauder>,
+          loader: () => fetch("http://localhost:5000/allproducts")
       },
      
       {
         path: "/beautyglazed",
         element:<BeautyGlazed></BeautyGlazed>,
+        loader: () => fetch("http://localhost:5000/allproducts")
       },
      
       {
@@ -72,25 +74,30 @@ const router = createBrowserRouter([
       {
         path: "/chanel",
         element:<Chanel></Chanel>,
+        loader: () => fetch("http://localhost:5000/allproducts")
       },
       {
         path: "/luiosvuttion",
         element:<LuiosVuttion></LuiosVuttion>,
+        loader: () => fetch("http://localhost:5000/allproducts")
       },
      
       {
         path: "/dior",
         element:<Dior></Dior>,
+        loader: () => fetch("http://localhost:5000/allproducts")
       },
      
       {
         path: "/alcon",
         element:<Alcon></Alcon>,
+        loader: () => fetch("http://localhost:5000/allproducts")
       },
      
       {
         path: "/avon",
         element:<Avon></Avon>,
+        loader: () => fetch("http://localhost:5000/allproducts")
       },
      
       {
