@@ -1,132 +1,52 @@
 [
   {
-      "brand": "L'Oréal",
+      
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjAoBx-YUvvdbwCildUEhAEVmjTWPxmbX6f7Y3XcFpVkvOBGmLBFbweKOl22oY8TZ6C9w&usqp=CAU",
       "products": [
-          {
-              "name": "L'Oréal Foundation",
-              "type": "Cosmetics",
-              "price": "$29.99",
-              "rating": 4.5,
-              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRRxFcozaYGceoORd-ABdTq_-0k1zbe-rcYw&usqp=CAU"
-          },
-          {
-              "name": "L'Oréal Mascara",
-              "type": "Cosmetics",
-              "price": "$24.99",
-              "rating": 4.3,
-              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyqWMw1OeQwYg9iU2jdEKKoTr-kQAC5R4vAA&usqp=CAU"
-          },
-          {
-              "name": "L'Oréal Lipstick",
-              "type": "Cosmetics",
-              "price": "$19.99",
-              "rating": 4.4,
-              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvdQs6vmALAwew8p9dLU8l2EEEfxN8npzLEg&usqp=CAU"
-          },
-          {
-              "name": "L'Oréal Face Moisturizer",
-              "type": "Skincare",
-              "price": "$34.99",
-              "rating": 4.6,
-              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGJAeT26UClzuqvAmofOdU3PThzu6uxzGV0A&usqp=CAU"
-          }
+        
       ]
   },
   {
-      "brand": "Estée Lauder",
+     
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36kTaMJ5hdgf3yq8KZ--JDoo_RF4YSmEcLg&usqp=CAU",
       "products": [
-          {
-              "name": "Estée Lauder Perfume",
-              "type": "Perfume",
-              "price": "$49.99",
-              "rating": 4.7,
-              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5F53pS2JgN3zitFYRnolpsEX76Jve8gSTfA&usqp=CAU"
-          },
-          {
-              "name": "Estée Lauder Foundation",
-              "type": "Cosmetics",
-              "price": "$39.99",
-              "rating": 4.6,
-              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2hrB_t0pyJ7OgWmHBMRQfDjO-kHT8XGXRqQ&usqp=CAU"
-          },
-          {
-              "name": "Estée Lauder Lip Gloss",
-              "type": "Cosmetics",
-              "price": "$29.99",
-              "rating": 4.5,
-              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKFUXtngtoD_SnitO9SHFHSHyMp0JTZD7vrA&usqp=CAU"
-          },
-          {
-              "name": "Estée Lauder Eye Cream",
-              "type": "Skincare",
-              "price": "$44.99",
-              "rating": 4.8,
-              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpaDapZyVqMfpxp0iSkvuwtZuEUzp3dTCzLg&usqp=CAU"
-          }
+        
       ]
   },
   {
-      "brand": "Chanel",
+      
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqARSjGwsJUn9GNvImDnGSO2xSlkLbFdcUpw&usqp=CAU",
       "products": [
-          {
-              "name": "Chanel Hijab Pin Set",
-              "type": "Hijab Accessories",
-              "price": "$99.99",
-              "rating": 4.8,
-              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOnwepJff3jmmf-72dR2K_afcqmxXYLd68w&usqp=CAU"
-          },
-          {
-              "name": "Chanel Scarf",
-              "type": "Fashion Accessories",
-              "price": "$79.99",
-              "rating": 4.6,
-              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs9jumyz8CbHLqD9t4WjwHIvu-4ZbclZzxrA&usqp=CAU"
-          },
-          {
-              "name": "Chanel Earrings",
-              "type": "Jewelry",
-              "price": "$59.99",
-              "rating": 4.7,
-              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUDrUi3pra4koxI-mW88AfDwuEUZdLMil1vQ&usqp=CAU"
-          },
-          {
-              "name": "Chanel Bracelet",
-              "type": "Jewelry",
-              "price": "$69.99",
-              "rating": 4.9,
-              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTv6KfeEX-kACEbz7t4QSMgvYCGyPGX6dKtw&usqp=CAU"
-          }
+          
       ]
   },
   {
-      "brand": "Dior",
+    
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYgUHP-JyW3rsKKnz2NQx227Kc8_OpVqXtbw&usqp=CAU",
       "products": [
           {
+            "brand": "Dior",
               "name": "Dior Skincare Set",
               "type": "Skincare",
               "price": "$69.99",
               "rating": 4.9,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYl1gvfIkFlnY1I3zWToftoUC9gvXYmLwWBA&usqp=CAU"
           },
-          {
+          {  "brand": "Dior",
               "name": "Dior Lipstick",
               "type": "Cosmetics",
               "price": "$34.99",
               "rating": 4.7,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLQ2HB8gvh_u2F7FUWbIWcQTYQuy54Jt6fWg&usqp=CAU"
           },
-          {
+          {  "brand": "Dior",
               "name": "Dior Perfume",
               "type": "Perfume",
               "price": "$59.99",
               "rating": 4.8,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7sO5h3VYMfhE2S_rubMgj_43xYvrNAQPXEA&usqp=CAU"
           },
-          {
+          {  "brand": "Dior",
               "name": "Dior Eye Cream",
               "type": "Skincare",
               "price": "$49.99",
@@ -136,31 +56,32 @@
       ]
   },
   {
-      "brand": "beauty glazed",
+      
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAYOvtLxQe0h7GeZTGh55FOToF4q5Zw3Pdog&usqp=CAU",
       "products": [
           {
+            "brand": "beauty glazed",
               "name": "beauty glazed Shadow Palette",
               "type": "Cosmetics",
               "price": "$39.99",
               "rating": 4.6,
               "image": "https://beautyglazed.com/cdn/shop/files/slideshow-B72-2_1000x_fd055326-1077-4e4c-9666-204a1018bf7f_2048x2048.webp?v=1654846513"
           },
-          {
+          {"brand": "beauty glazed",
               "name": "beauty glazed Highlighter",
               "type": "Cosmetics",
               "price": "$29.99",
               "rating": 4.5,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQi4Ot3WaMrNvJaYOerO1HV7z94FPT1WCWzg&usqp=CAU"
           },
-          {
+          {"brand": "beauty glazed",
               "name": "beauty glazed Lip Kit",
               "type": "Cosmetics",
               "price": "$24.99",
               "rating": 4.4,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt2dKUBaGcJTHfyi8wyGnEvaTyq1pX7PPSKg&usqp=CAU"
           },
-          {
+          {"brand": "beauty glazed",
               "name": "beauty glazed Blush",
               "type": "Cosmetics",
               "price": "$19.99",
@@ -170,31 +91,31 @@
       ]
   },
   {
-      "brand": "Louis Vuitton",
+    
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUCK_0Acu_BBRPflkz5tMemcTtiDFP9K4vcw&usqp=CAU",
       "products": [
-          {
+          {  "brand": "Louis Vuitton",
               "name": "Louis Vuitton Tote Bag",
               "type": "Bag",
               "price": "$199.99",
               "rating": 4.7,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgBZHy-dbLG6It7QucVzWbGWISQ6giaFOigA&usqp=CAU"
           },
-          {
+          {  "brand": "Louis Vuitton",
               "name": "Louis Vuitton Wallet",
               "type": "Accessories",
               "price": "$129.99",
               "rating": 4.6,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmTY5UDjb1F9Jfpq7oVy0tTckrpHXSLzMe1Q&usqp=CAU"
           },
-          {
+          {  "brand": "Louis Vuitton",
               "name": "Louis Vuitton Backpack",
               "type": "Bag",
               "price": "$179.99",
               "rating": 4.8,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ii-PrKjiGU1dgDSmGPnYamBL2UOedqKAvQ&usqp=CAU"
           },
-          {
+          {  "brand": "Louis Vuitton",
               "name": "Louis Vuitton Sunglasses",
               "type": "Accessories",
               "price": "$149.99",
@@ -204,31 +125,31 @@
       ]
   },
   {
-      "brand": "Alcon",
+  
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoHCIQbRMi0lvGV7bPoXdxTkcm9LdRuMSvCg&usqp=CAU",
       "products": [
-          {
+          {    "brand": "Alcon",
               "name": "Alcon Daily Contact Lenses",
               "type": "Contact Lens",
               "price": "$24.99",
               "rating": 4.4,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbgEokuFbN2aSQFyeoJgRkNHCw0jKuGOKhww&usqp=CAU"
           },
-          {
+          {    "brand": "Alcon",
               "name": "Alcon Monthly Contact Lenses",
               "type": "Contact Lens",
               "price": "$29.99",
               "rating": 4.3,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM4G70IssYzuM7RiDiiY6L5y1lTHXF-vVlRQ&usqp=CAU"
           },
-          {
+          {    "brand": "Alcon",
               "name": "Alcon Color Contact Lenses",
               "type": "Contact Lens",
               "price": "$27.99",
               "rating": 4.5,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVE3cMVXlKLF9tyYI7oMZpGjmzjMmZ8RdkeQ&usqp=CAU"
           },
-          {
+          {    "brand": "Alcon",
               "name": "Alcon Toric Contact Lenses",
               "type": "Contact Lens",
               "price": "$34.99",
@@ -238,31 +159,31 @@
       ]
   },
   {
-      "brand": "Avon",
+      
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1jIeiZH064QOcSR3ogWLwgR-E1c59clelsw&usqp=CAU",
       "products": [
-          {
+          {"brand": "Avon",
               "name": "Avon Shampoo",
               "type": "Hair Care",
               "price": "$19.99",
               "rating": 4.2,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1aWS79EDakZapc7dXuc-Xj18Hg8rsVVeUYw&usqp=CAU"
           },
-          {
+          {"brand": "Avon",
               "name": "Avon Conditioner",
               "type": "Hair Care",
               "price": "$16.99",
               "rating": 4.1,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsKnru-fvnfR-Q8geUgxV194BvVb4NbXuFYg&usqp=CAU"
           },
-          {
+          {"brand": "Avon",
               "name": "Avon Hair Mask",
               "type": "Hair Care",
               "price": "$14.99",
               "rating": 4.0,
               "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa3Ru4unn8-vcDXAtGEukjf7bNuMkOHlHPWg&usqp=CAU"
           },
-          {
+          {"brand": "Avon",
               "name": "Avon Hair Oil",
               "type": "Hair Care",
               "price": "$12.99",
