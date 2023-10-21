@@ -11,7 +11,36 @@ const Chanel = () => {
    const filteredProducts = lorealLoader.filter(product => product.brand === "Chanel");
 
    return (
-     <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <div>
+      <div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center">
+  <div className="space-y-6 p-8 lg:px-3">
+<h1 className="text-4xl font-bold "> All of todays best <span className=" font-extrabold text-amber-600">selling</span> products</h1>
+<p className="text-2xl font-semibold">clients testimonials</p>
+<p className="text-slate-500 leading-7">Fear is huge issue for me .This technique .This brand has is really smart way to literally set those fears aside ... That to me ,is  unleasing the product whithin .Through brand products work, I found my strength</p>
+  </div>
+  <div className="col-span-2">
+  <div className="carousel w-full h-[450px] ">
+  <div id="item1" className="carousel-item w-full">
+    <img src="https://i.etsystatic.com/42296317/r/il/a7ef61/4817498465/il_fullxfull.4817498465_2d0b.jpg" className="w-full" />
+  </div> 
+  <div id="item2" className="carousel-item w-full ">
+    <img src="https://ae01.alicdn.com/kf/He12d88eddab14efc84949f7e541a02a56.jpg_640x640Q90.jpg_.webp" className="w-full" />
+  </div> 
+  <div id="item3" className="carousel-item w-full">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbY9-d1CjWPChjiZH8iXg6_J8So4uxBEnpkg&usqp=CAU" className="w-full" />
+  </div> 
+ 
+</div> 
+<div className="flex justify-center w-full py-2 gap-2">
+  <a href="#item1" className="btn btn-xs">1</a> 
+  <a href="#item2" className="btn btn-xs">2</a> 
+  <a href="#item3" className="btn btn-xs">3</a> 
+ 
+</div>
+  </div>
+</div>
+
+<div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
        {filteredProducts.map(product => (
          <div key={product._id} className="card bg-base-100 shadow-xl">
            <figure className="px-2 pt-10">
@@ -39,6 +68,7 @@ const Chanel = () => {
          </div>
        ))}
      </div>
+    </div>
    );
 };
 

@@ -61,15 +61,17 @@ const MyCart = () => {
               <p>{cosmetic.price}</p>
               <p>{cosmetic.rating}</p>
             </div>
+
+
             <div className="card-actions justify-end">
               <div className="btn-group btn-group-vertical space-y-4">
-               <Link to={`/productdetails/${cosmetic._id}`}> <button className="btn btn-active">View</button></Link>
+               <Link to={`/productdetails/${cosmetic._id}`}> <button className="px-5 py-1 border-2 rounded">View</button></Link>
                 <Link to={`/updatecosmetics/${cosmetic._id}`}>
-                  <button className="btn btn-active">Update</button>
+                  <button className="px-3 py-1 border-2 rounded">Update</button>
                 </Link>
                 <button
                   onClick={() => handleDelete(cosmetic._id)}
-                  className="btn btn-active"
+                  className="px-5 py-1 border-2 rounded text-red-400"
                 >
                   X
                 </button>

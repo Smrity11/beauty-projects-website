@@ -19,13 +19,13 @@ const Alcon = () => {
   <div className="col-span-2">
   <div className="carousel w-full h-[450px] ">
   <div id="item1" className="carousel-item w-full">
-    <img src="https://assets.gadgets360cdn.com/pricee/assets/category/202006/brand-loreal-1200x628_1591871140.jpg" className="w-full" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTUt2Ewrz8kvh7-Ti6MIVdJcsjVpRXqmggnA&usqp=CAU" className="w-full" />
   </div> 
   <div id="item2" className="carousel-item w-full">
-    <img src="https://www.sheknows.com/wp-content/uploads/2023/05/Best-LOreal-Products-for-Mature-Skin-TKTK-e1683129257433.jpg?w=1440" className="w-full" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Wdt5oJFReblon0dUCxhTeDdcAIcQsty07A&usqp=CAU" className="w-full" />
   </div> 
   <div id="item3" className="carousel-item w-full">
-    <img src="https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/beauty-magazine/articles/best-skin-care-products-for-dry-skin/loreal-paris-article-our-best-skin-care-products-for-dry-skin-d.jpg" className="w-full" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNVA4U0d6Jcdcr5VY6iF0dNvhezVlsUkpJ5A&usqp=CAU" className="w-full" />
   </div> 
  
 </div> 

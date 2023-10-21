@@ -6,8 +6,6 @@ const BrandDetails = () => {
     const brandDataLoad = useLoaderData()
   
     const { image, name, price, rating, description} = brandDataLoad
-    
-
 
 const handleAddtoCard= () =>{
     fetch("https://beauty-server-project-assignment.vercel.app/cosmetics", {
