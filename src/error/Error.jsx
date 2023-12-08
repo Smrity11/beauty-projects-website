@@ -6,7 +6,7 @@ const Error = () => {
       <div className="lg:w-1/2">
         <img
           className="w-full"
-          src="https://internetdevels.com/sites/default/files/public/blog_preview/404_page_cover.jpg"
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s--_GqDpWw0--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/7aqcppklh6bexoa70320.jpg"
           alt=""
         />
       </div>

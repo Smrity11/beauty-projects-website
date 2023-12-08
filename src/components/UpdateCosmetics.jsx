@@ -7,7 +7,7 @@ const UpdateCosmetics = () => {
     const cosmetic =useLoaderData()
     const{_id,name,brand,type,price,description,rating,photo} = cosmetic
   
-   console.log(cosmetic)
+  
 
     const handleForm = e =>{
         e.preventDefault()
@@ -20,10 +20,10 @@ const UpdateCosmetics = () => {
         const rating = form.rating.value
         const photo = form.photo.value
         const UpdateCosmetics={name,brand,type,price,description,rating,photo}
-        console.log(UpdateCosmetics);
+       
 
         // send data to the server
-        fetch(`https://beauty-server-project-assignment.vercel.app/allproducts/${_id}` ,{
+        fetch(`https://beauty-server-project-assignment.vercel.app/allProducts/${_id}` ,{
             method:"PUT",
             headers:{
                 "content-type" : "application/json"
@@ -32,14 +32,14 @@ const UpdateCosmetics = () => {
         })
         .then(res => res.json())
         .then(data =>{
-            console.log(data);
+          console.log(data);
             if(data.insertedId){
-                Swal.fire({
-                    tittle:'success',
-                    text: 'product updated successfully',
-                    icon:'success',
-                    confirmButtonText:'Cool'
-                })
+              Swal.fire({
+                tittle: "success",
+                text: "product updated successfully",
+                icon: "success",
+                confirmButtonText: "Cool",
+              });
             }
         })
     }

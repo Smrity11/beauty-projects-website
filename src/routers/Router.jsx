@@ -5,7 +5,7 @@ import Home from "../pages/Home";
 import Register from "../components/Register";
 import AboutUs from "../pages/AboutUs";
 // import Services from "../pages/services/Services";
-import Error from "../error/Error";
+import Error from "../Error/Error";
 // import PrivateRoute from "./privateRoute";
 // import CommingSoon from "../error/CommingSoon";
 import MyCart from "../pages/MyCart";
@@ -22,7 +22,7 @@ import Loreal from "../components/AllBrand/Loreal";
 import BeautyGlazed from "../components/AllBrand/BeautyGlazed";
 import EsteLauder from "../components/AllBrand/EsteLauder";
 import LuiosVuttion from "../components/AllBrand/LuiosVuttion";
-import PrivateRoute from "./privateRoute";
+import PrivateRoute from "./PrivateRoute";
 
 import BrandDetails from "../components/BrandDetails";
 const router = createBrowserRouter([

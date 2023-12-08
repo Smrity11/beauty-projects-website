@@ -49,7 +49,7 @@ const ExtraSection = () => {
           <div className="mx-4 shadow-lg h-[200px]">
             <img
               className="w-28 h-28 mx-auto mt-10 rounded-full"
-              src="https://cdn.wallpapersafari.com/47/23/MNptdX.jpg"
+              src="https://media.allure.com/photos/63dd650f2ae056c6f4b33900/16:9/w_3487,h_1961,c_limit/2-03-liquid-eyeliner.jpg"
               alt=""
             />
           </div>

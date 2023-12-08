@@ -11,3 +11,24 @@
     color:#ff00ff ; 
 
   }
+
+  .home-container {
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  .light-mode {
+    background-color: white;
+    color: black;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  .toggle-button {
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  

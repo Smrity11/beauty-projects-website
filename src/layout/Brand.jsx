@@ -1,28 +1,11 @@
-import { useEffect } from "react";
+
 
 import { AiFillCheckCircle } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
-// import { NavLink } from "react-router-dom";
+
 
 const Brand = () => {
-  //  const loadedBrand =useLoaderData()
-  //  console.log(loadedBrand);
-  // const [brand ,setBrand ] = useState([])
-  // useEffect(() => {
-  //     fetch('http://localhost:5000/brand')
-  //     .then(res => res.json())
-  //     .then(data => setBrand(data))
-  // }
-  // ,[])
-
-  useEffect(() => {
-    fetch("https://beauty-server-project-assignment.vercel.app/brand")
-      .then((res) => res.json())
-      .then((data) => console.log(data));
-  }, []);
-
-  // console.log(brand)
-
+ 
   return (
     <div>
       <div className="text-center mt-32 mb-12">
@@ -46,7 +29,7 @@ const Brand = () => {
               <NavLink to="/loreal">
               <div className="max-w-xs w-full bg-gray-100 p-4 m-4 rounded-lg shadow-md mx-auto">
                 <div className="text-center mt-4">
-                  <h1 className="text-xl font-semibold">LOréal</h1>
+                  <h1 className="text-xl font-semibold text-black">LOréal</h1>
                   {/* <p className="text-gray-600">{brandData?.type}</p> */}
                   <div className="border-b-2 border-[#ffbf47] my-4 mx-auto w-8"></div>
                 </div>
@@ -62,7 +45,7 @@ const Brand = () => {
               <NavLink to="/estelauder">
               <div className="max-w-xs w-full bg-gray-100 p-4 m-4 rounded-lg shadow-md mx-auto">
                 <div className="text-center mt-4">
-                  <h1 className="text-xl font-semibold">Estée Lauder</h1>
+                  <h1 className="text-xl font-semibold text-black">Estée Lauder</h1>
                   {/* <p className="text-gray-600">{brandData?.type}</p> */}
                   <div className="border-b-2 border-[#ffbf47] my-4 mx-auto w-8"></div>
                 </div>
@@ -78,7 +61,7 @@ const Brand = () => {
              <NavLink to="/chanel">
              <div className="max-w-xs w-full bg-gray-100 p-4 m-4 rounded-lg shadow-md mx-auto">
                 <div className="text-center mt-4">
-                  <h1 className="text-xl font-semibold">Chanel</h1>
+                  <h1 className="text-xl font-semibold text-black">Chanel</h1>
                   {/* <p className="text-gray-600">{brandData?.type}</p> */}
                   <div className="border-b-2 border-[#ffbf47] my-4 mx-auto w-8"></div>
                 </div>
@@ -94,7 +77,7 @@ const Brand = () => {
              <NavLink to="/dior">
              <div className="max-w-xs w-full bg-gray-100 p-4 m-4 rounded-lg shadow-md mx-auto">
                 <div className="text-center mt-4">
-                  <h1 className="text-xl font-semibold">Dior</h1>
+                  <h1 className="text-xl font-semibold text-black">Dior</h1>
                   {/* <p className="text-gray-600">{brandData?.type}</p> */}
                   <div className="border-b-2 border-[#ffbf47] my-4 mx-auto w-8"></div>
                 </div>
@@ -110,7 +93,7 @@ const Brand = () => {
              <NavLink to="/beautyglazed">
              <div className="max-w-xs w-full bg-gray-100 p-4 m-4 rounded-lg shadow-md mx-auto">
                 <div className="text-center mt-4">
-                  <h1 className="text-xl font-semibold">Beauty glazed</h1>
+                  <h1 className="text-xl font-semibold text-black">Beauty glazed</h1>
                   {/* <p className="text-gray-600">{brandData?.type}</p> */}
                   <div className="border-b-2 border-[#ffbf47] my-4 mx-auto w-8"></div>
                 </div>
@@ -126,7 +109,7 @@ const Brand = () => {
              <NavLink to="/luiosvuttion">
              <div className="max-w-xs w-full bg-gray-100 p-4 m-4 rounded-lg shadow-md mx-auto">
                 <div className="text-center mt-4">
-                  <h1 className="text-xl font-semibold">Louis Vuitton</h1>
+                  <h1 className="text-xl font-semibold text-black">Louis Vuitton</h1>
                   {/* <p className="text-gray-600">{brandData?.type}</p> */}
                   <div className="border-b-2 border-[#ffbf47] my-4 mx-auto w-8"></div>
                 </div>
@@ -142,7 +125,7 @@ const Brand = () => {
              <NavLink to="/alcon">
              <div className="max-w-xs w-full bg-gray-100 p-4 m-4 rounded-lg shadow-md mx-auto">
                 <div className="text-center mt-4">
-                  <h1 className="text-xl font-semibold">Alcon</h1>
+                  <h1 className="text-xl font-semibold text-black">Alcon</h1>
                   {/* <p className="text-gray-600">{brandData?.type}</p> */}
                   <div className="border-b-2 border-[#ffbf47] my-4 mx-auto w-8"></div>
                 </div>
@@ -158,7 +141,7 @@ const Brand = () => {
              <NavLink to="/avon">
              <div className="max-w-xs w-full bg-gray-100 p-4 m-4 rounded-lg shadow-md mx-auto">
                 <div className="text-center mt-4">
-                  <h1 className="text-xl font-semibold">Avon</h1>
+                  <h1 className="text-xl font-semibold text-black">Avon</h1>
                   {/* <p className="text-gray-600">{brandData?.type}</p> */}
                   <div className="border-b-2 border-[#ffbf47] my-4 mx-auto w-8"></div>
                 </div>

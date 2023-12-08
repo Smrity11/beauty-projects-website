@@ -2,6 +2,7 @@
 
 
 import { 
+  Link,
     NavLink, useLoaderData } from "react-router-dom";
 
 const LuiosVuttion = () => {
@@ -61,8 +62,10 @@ const LuiosVuttion = () => {
              <NavLink to={`/productdetails/${product._id}`} className="underline">See Details</NavLink>
            </div>
            <div className="card-actions">
-             <button className="btn btn-primary">Update</button>
-           </div>
+              <Link to={`/updatecosmetics/${product._id}`}>
+                  <button className="btn btn-active">Update</button>
+                </Link>
+              </div>
          </div>
        </div>
      ))}

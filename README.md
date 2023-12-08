@@ -4,7 +4,7 @@ Welcome to our GlowVista Cosmetics Website! Here you'll find a wide selection of
 
 
 # GlowVista
-[GlowVistaLiveLink Here]()
+[GlowVistaLiveLink Here](https://beauty-client-project.web.app/)
 
 ## Features:
 

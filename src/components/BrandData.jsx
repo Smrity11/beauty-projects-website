@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const BrandData = () => {
   const lodedCosmetics = useLoaderData();
-  console.log(lodedCosmetics);
+ 
   const [cosmetics, setCosmetic] = useState(lodedCosmetics);
 
   const handleDelete = (_id) => {

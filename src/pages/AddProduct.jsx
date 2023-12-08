@@ -25,7 +25,7 @@ const AddProduct = () => {
       photo,
       
     };
-    console.log(newCosmetics);
+   
 
     // send data to the server
     fetch("https://beauty-server-project-assignment.vercel.app/allProducts", {
@@ -37,7 +37,7 @@ const AddProduct = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+    
         if (data.insertedId) {
           Swal.fire({
             tittle: "success",
@@ -53,7 +53,7 @@ const AddProduct = () => {
     setSelectedCategory(e.target.value);
   };
   return (
-    <div className="bg-[#F4F3F0] md:p-24">
+    <div className="bg-[#F4F3F0] md:p-24 ">
       <h2 className="text-3xl">Add a Product</h2>
       <form onSubmit={handleForm}>
         <div className="flex gap-7 mb-6">

@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+
 import 
  { useState, useEffect } from 'react';
 
@@ -33,7 +35,7 @@ const SpecialProduct = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []); // Empty dependency array means the effect runs once after the initial render
+  }, []) 
 
   return (
         <div>
@@ -43,7 +45,7 @@ const SpecialProduct = () => {
                 <div className="relative bg-cover bg-center" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjIKCOsd149HV2DnRXz1JikRRZLWDuvk72ag&usqp=CAU)' }}>
 
 
-<div className='grid grid-cols-1 md:grid-cols-2 jus items-center px-8 md:px-24 '>
+<div className='grid grid-cols-1 md:grid-cols-2 jus items-center px-8 md:px-24 text-black'>
     <div className='space-y-9'>
     <h2 className='text-2xl font-bold my-2'>Glam Liquid products</h2>
     <p> $20.00</p> <span>$18.00</span>
